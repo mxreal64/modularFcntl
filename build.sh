@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -e
-
-# Leverage your dynamic standard library module caching trick
+# import std compilation
 if [ ! -d "gcm.cache" ]; then
     echo "Building standard library module cache..."
     GCC_VERSION=$(g++ -dumpversion)
